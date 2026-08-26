@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Aether Prism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section style="padding: 50px; max-width: 600px; margin: auto;">
+        <h1>Let's Connect</h1>
+        <p>Get in touch to start your next project.</p>
+        
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="project">Project Type:</label><br>
+            <select id="project" name="project">
+                <option value="branding">Branding</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="social">Social Media Content</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+        <br>
+        <a href="index.html">Back to Home</a>
+    </section>
+</body>
+</html>

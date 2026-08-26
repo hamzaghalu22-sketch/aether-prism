@@ -1,0 +1,597 @@
+ 
+ body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex start;
+    align-items: flex-start;
+    padding:40px 60px;
+     box-sizing:border-box;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #004d4d, #000000);
+}
+    .services-link {
+        text-decoration: none;
+    color: inherit;
+    display: block;
+}
+        .cta-button {
+        display: inline-block;
+        padding: 12px 24px;
+        color: #00ffff;
+        border: 2px solid #00ffff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 25px 5px #00ffff;
+    }
+
+    .cta-button:hover {
+        background-color: #00ffff;
+        color: #0d0d0d;
+        cursor: pointer;
+    }
+
+ .service-card {
+    cursor: pointer;
+    user-select: none;
+}
+nav a, 
+.shop-item a, 
+.digital-shop a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, 
+.shop-item a:hover, 
+.digital-shop a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+.shop-btn {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+.apex-noir {
+    margin-top: 30px;
+}
+/* Contact Form Styling */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+}
+button {
+    cursor: pointer;
+}
+
+/* Cinematic Noir Base Background */
+
+
+
+    /* Cinematic Noir Base Background */
+
+body {
+    background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Services Section Styling */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+.service-card {
+    border: 1px solid #00ffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+box-shadow:0px 0px 15px #00ffff;
+}
+/* About Page & Typography Styles */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #00ffff; /* Electric Teal for high-contrast headers */
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Ensures text is readable against black background */
+}
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+/* Card Container Styling */
+.service-card {
+    background: rgba(15, 15, 15, 0.8); /* Cinematic Noir dark base */
+    border: 2px solid #008080; /* Electric Teal border */
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    color: #ffffff;
+}
+
+/* Hover Effect to make them pop */
+.service-card:hover {
+    border-color: #00ffff; /* Brighter Electric Teal on hover */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Subtle glow effect */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Heading inside the cards */
+.service-card h3 {
+    color: #00ffff; /* Electric Teal text for headings */
+    margin-bottom: 10px;
+}
+/* FAQ Section Styling */
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background: rgba(15, 15, 15, 0.8);
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.faq-item:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.faq-question {
+    color: #00ffff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.mockup-container {
+    position: relative;
+    width: 100%;
+    height:350px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0f1115;
+    border: 1px solid rgba(0, 240, 255, 0.2); /* Electric Teal accent border */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
+                0 0 20px rgba(0, 240, 255, 0.1); /* Subtle teal ambient glow */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.mockup-container:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 240, 255, 0.5);
+}
+
+.mockup-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .mockup-container {
+        height: 250px;
+    }
+
+   .services-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.services-container {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(10, 10, 15, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 255, 204, 0.15);
+}
+
+body {
+  padding-top: 5rem;
+}
+.can-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the lime inside the left circular placeholder */
+.lime-img {
+    position: absolute;
+    left: 12%;       /* Adjust left/right to center it in the circle */
+    top: 50%;        /* Adjust top/bottom to center it vertically */
+    transform: translateY(-50%);
+    width: 140px;    /* Sized to fit comfortably inside the circle */
+    height: auto;
+    mix-blend-mode: screen;
+}
+
+/* Style for the coke can inside the right rectangular placeholder */
+.coke-img {
+    position: absolute;
+    right: 15%;      /* Adjust left/right to center it in the rectangle card */
+    top: 50%;        /* Adjust top/bottom to center it vertically */
+    transform: translateY(-50%);
+    width: 160px;    /* Sized to fit neatly inside the vertical card */
+    height: auto;
+    mix-blend-mode: screen;
+}
+/* Isolated style just for practice.html sandbox */
+.coke-hero {
+    background-color: #0b0f19;
+    color: #ffffff;
+}
+/* Style for the lime inside the left circular placeholder */
+.lime-img {
+    position: absolute;
+    left: 12%;       
+    top: 50%;        
+    transform: translateY(-50%);
+    width: 140px;    
+    height: auto;
+    mix-blend-mode: multiply;
+}
+/* Style for the container holding the lime */
+
+
+/* Force the wrapper or container background to match */
+.lime-container, .circle-container, div:has(.lime-img) {
+    background-color: transparent !important;
+}
+/* --- Spider-Man Cinematic Hero Section --- */
+.spider-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 50%, rgba(220, 20, 60, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.typography-container {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.spider-hero-section .sub-title {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: #ff3366;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.spider-hero-section .main-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.spider-hero-section .cinematic-tagline {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.spider-img-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spider-img {
+  max-width: 450px;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8));
+  animation: floatSpider 4s ease-in-out infinite;
+}
+
+@keyframes floatSpider {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 900px) {
+  .spider-hero-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  .typography-container {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  
+}
+/* Global container and overflow fix */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.services-container, 
+.tier-container, 
+.shop-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+.service-card, 
+.tier-card, 
+.shop-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+/* Pricing and Services Section Styling */
+.pricing-section,
+.services-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00f0ff; /* Electric Teal */
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+/* Pricing and Services Section Styling */
+.pricing-section,
+.services-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00f0ff;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Card Styling & Electric Teal Glow */
+.card, .service-card, .tier-card, .shop-card {
+  background: rgba(10, 15, 25, 0.9) !important;
+  border: 1px solid rgba(0, 240, 255, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 2.5rem 2rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.05) !important;
+}
+
+.card:hover, .service-card:hover, .tier-card:hover, .shop-card:hover {
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.4), inset 0 0 20px rgba(0, 240, 255, 0.15) !important;
+  transform: translateY(-5px);
+}
+
+.card h3, .service-card h3, .tier-card h3, .shop-card h3 {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.card .price, .tier-card .price {
+  color: #00f0ff !important;
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  margin-bottom: 1.5rem !important;
+}
+
+.card ul, .tier-card ul, .service-card ul {
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 1.5rem 0 !important;
+}
+
+.card ul li, .tier-card ul li, .service-card ul li {
+  color: #cfd8dc !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.cta-btn {
+  display: inline-block !important;
+  background: transparent !important;
+  color: #00f0ff !important;
+  border: 1px solid #00f0ff !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.cta-btn:hover {
+  background: #00f0ff !important;
+  color: #0a0f19 !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.8) !important;
+}
+.ai-auditor-container {
+    background: #050b14;
+    border: 1px solid #00f0ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.ai-auditor-container h3 {
+    color: #00f0ff;
+    margin-bottom: 10px;
+}
+
+.ai-auditor-container p {
+    color: #b0c4de;
+    margin-bottom: 20px;
+}
+
+.ai-auditor-container textarea {
+    width: 100%;
+    height: 120px;
+    background: #020408;
+    border: 1px solid #00f0ff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.ai-auditor-container textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.ai-output-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #020408;
+    border-left: 3px solid #00f0ff;
+    color: #e0e0e0;
+    font-family: monospace;
+    white-space: pre-wrap;
+    min-height: 50px;
+}
