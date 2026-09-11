@@ -1,289 +1,463 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aether Prism</title>
- <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aether Prism | HG Designs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&family=Newsreader:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>  
-    <h1>Welcome to Aether Prism</h1>
-    <p>welcome to the digital frontier</p>
-    <div class="cta-container">
-        <a href="#contact" class="cta-button">start project</a>
-    </div>
-   <section id="services">
-        <h2>Service Tiers // Deployment Matrix</h2>
-        <p>Select the operational scope for your next project.</p>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Landing Page</h3>
-                <div class="price">$150</div>
-                <ul>
-                    <li>HTML5 / CSS3 / JS</li>
-                    <li>Tech-Noir Aesthetic</li>
-                    <li>Tally Form Integration</li>
-                </ul>
-                <a href="#contact" class="cta-button">Initialize</a>
-            </div>
-            <div class="pricing-card active-tier">
-                <span class="badge">ACTIVE NODE</span>
-                <h3>Full Portfolio</h3>
-                <div class="price">$350</div>
-                <ul>
-                    <li>Multi-Page Layout</li>
-                    <li>GSAP & Motion Animations</li>
-                    <li>Cloudflare Deployment</li>
-                </ul>
-                <a href="#contact" class="cta-button">Deploy Now</a>
-            </div>
-        </div>
-    </section>
+<div class="progress-bar" id="progressBar"></div>
 
-    <section id="telemetry">
-        <h2>System Telemetry // Matrix Filter</h2>
-        <div class="filter-controls">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Active Nodes</button>
-            <button class="filter-btn">Archived</button>
-        </div>
-        <div class="telemetry-grid">
-            <div class="telemetry-card">
-                <span class="label">UPTIME STATUS</span>
-                <span class="value">99.98%</span>
-            </div>
-            <div class="telemetry-card">
-                <span class="label">ACTIVE PROTOCOLS</span>
-                <span class="value">14/14</span>
-            </div>
-            <div class="telemetry-card">
-                <span class="label">LEGACY ARCHIVES</span>
-                <span class="value">08</span>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-    <h2>About HG Designs</h2>
-    <p>Forged through a quarter-century of creative discipline and scaled for the global stage, HG Designs is an independent digital studio operating at the intersection of cinematic noir aesthetics and cutting-edge web architecture. Serving visionary brands across the US, UK, and beyond, we engineer high-impact visual identities, immersive 3D frontends, and automated workflows designed to dominate the digital frontier.</p>
-</section>
-
-   <section id="portfolio">
-    <h2>Portfolio Showcase</h2>
-    <div class="portfolio-grid">
-        <div class="mockup-container">
-            <a href="brain.jpeg" target="_blank">
-                <img src="brain.jpeg" alt="Aether Prism Project Mockup">
-            </a>
-        </div>
-        
-        <div class="mockup-container">
-            <a href="apex.jpeg" target="_blank">
-                <img src="apex.jpeg" alt="Apex Noir Showcase">
-            </a>
-        </div>
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon"><img src="https://picsum.photos/seed/aether/80/80" alt="logo" /></div>
+      <span>AETHER PRISM</span>
+    </a>
+    <div class="nav-links">
+      <a href="#home" class="active">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
     </div>
-    <section id="shop">
-    <h2>Digital Shop</h2>
-    <div class="shop-grid">
-        <div class="shop-card">
-            <h3>Basic Logo Package</h3>
-            <p>Custom minimalist vector logo design tiers.</p>
-            <a href="#contact" class="shop-btn">Get Started</a>
-        </div>
-        <div class="shop-card">
-            <h3>Full Brand Identity</h3>
-            <p>Complete Cinematic Noir and Electric Teal visual branding.</p>
-            <a href="#contact" class="shop-btn">Get Started</a>
-        </div>
+    <div class="nav-right">
+      <a href="#contact" class="btn-neon nav-cta"><span>CONTACT NOW</span></a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
     </div>
-    <div class="shop-card">
-    <h3>Automotive Graphic Design</h3>
-    <p>Custom vehicle posters and specialized automotive graphics.</p>
-    <a href="#contact" class="shop-btn">Get Started</a>
-</div>
-<div class="shop-card harper-placeholder">
-    <h3>Harper A.I. Assistant</h3>
-    <p>Custom automated client intake and strategy assistant (Coming Soon).</p>
-    <span class="shop-btn">In Development</span>
-</div>
-</section>
-<!-- Pricing Section -->
-<section id="pricing" class="pricing-section">
-  <h2 class="section-title">Pricing Tiers</h2>
-  <div class="cards-grid">
-    
-    <!-- Starter Tier Card -->
-    <div class="card tier-card">
-      <h3>Starter Tier</h3>
-      <p class="price">$11 usd</p>
-      <p>Essential visual assets and social media kits designed to get new startups up and running fast.</p>
-      <ul>
-        <li>Custom Post & Reel Graphics</li>
-        <li>Basic Brand Assets</li>
-        <li>1 Revision Round</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
-    </div>
-
-    <!-- Professional Tier Card -->
-    <div class="card tier-card">
-      <h3>Professional Tier</h3>
-      <p class="price">$18 usd</p>
-      <p>Complete brand identity and scalable web UI/UX systems to elevate your digital presence.</p>
-      <ul>
-        <li>Full Visual Identity</li>
-        <li>Web & Mobile UI/UX</li>
-        <li>Priority Delivery & Support</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
-    </div>
-
-    <!-- Elite Tier Card -->
-    <div class="card tier-card">
-      <h3>Elite Tier</h3>
-      <p class="price">$27 usd</p>
-      <p>Full-scale custom development, end-to-end branding, and dedicated engineering support.</p>
-      <ul>
-        <li>Everything in Professional</li>
-        <li>Custom 3D Web Graphics & GSAP</li>
-        <li>Dedicated Ongoing Support</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
-    </div>
-
   </div>
-</section>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#contact" class="btn-neon mobile-cta"><span>CONTACT NOW</span></a>
+  </div>
+</nav>
 
-<!-- Services Offered Section -->
-<section id="services" class="services-section">
-  <h2 class="section-title">Services Offered</h2>
-  <div class="cards-grid">
-    <!-- Brand Reviews & Analysis -->
-    <div class="card">
-      <h3>Brand Reviews & Analysis</h3>
-      <p>Comprehensive written evaluations of brand identity, visual presence, and strategic positioning to help businesses elevate their market impact.</p>
-      <a href="#contact" class="cta-btn">Work with me</a>
+<!-- HERO - LEFT TEXT + RIGHT MEDIUM ICON -->
+<section id="home" class="hero">
+  <div class="hero-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="watermark">AETHER</div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow mono reveal">● SYSTEM ONLINE // PROTOCOL AETHER_PRISM</div>
+      <h1 class="hero-title reveal">Welcome to <span>Aether Prism</span></h1>
+      <p class="hero-sub reveal">Engineering cinematic noir frontends that dominate the digital frontier. Built for US, UK & global brands.</p>
+      <div class="reveal hero-actions">
+        <button class="btn-neon" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"><span>start project →</span></button>
+      </div>
+      <div class="hero-stats mono reveal" id="heroStats">
+        <span><b class="counter" data-target="99.98" data-suffix="%">0</b> UPTIME</span><i></i>
+        <span><b class="counter" data-target="14">0</b>/14 PROTOCOLS</span><i></i>
+        <span class="blue">NEON BLUE #00C8FF</span>
+      </div>
     </div>
-
-    <!-- Brand Identity & Visual Systems -->
-    <div class="card">
-      <h3>Brand Identity & Visual Systems</h3>
-      <p>Crafting distinct visual signatures that demand attention and set you apart.</p>
-      <ul>
-        <li>Custom Monograms & Logo Systems</li>
-        <li>Brand Style Guides & Color Palettes</li>
-        <li>Typography Systems & Watermarks</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
-    </div>
-
-    <!-- UI/UX Design & Digital Experiences -->
-    <div class="card">
-      <h3>UI/UX Design & Digital Experiences</h3>
-      <p>Building intuitive, high-impact digital experiences for modern web and mobile.</p>
-      <ul>
-        <li>Responsive Web & Mobile Interfaces</li>
-        <li>Interactive Wireframes & Prototypes</li>
-        <li>Design Systems & UI Components</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
-    </div>
-
-    <!-- Social Media Content & Graphics -->
-    <div class="card">
-      <h3>Social Media Content & Graphics</h3>
-      <p>High-contrast, scroll-stopping visuals engineered for maximum engagement.</p>
-      <ul>
-        <li>Custom Post & Reel Graphic Templates</li>
-        <li>Automated & Tech Graphic Assets</li>
-        <li>Promo Flyers & Event Covers</li>
-        <li>Brand-Aligned Visual Content Strategy</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Work with me</a>
+    <div class="hero-visual reveal">
+      <div class="visual-card">
+        <div class="visual-top mono"><span>● LIVE PREVIEW</span><span>NEON v2.1</span></div>
+        <div class="visual-img"><img src="https://picsum.photos/seed/aetherprism/400/400" alt="icon"/><div class="visual-glow"></div></div>
+        <div class="visual-bottom"><div class="v-stat"><span>STATUS</span><b class="blue">ONLINE</b></div><div class="v-stat"><span>FPS</span><b>60</b></div><div class="v-stat"><span>MS</span><b>12</b></div></div>
+      </div>
+      <div class="visual-float float-1 mono">HTML5 / CSS3 / JS</div>
+      <div class="visual-float float-2 mono">GSAP & MOTION</div>
     </div>
   </div>
 </section>
 
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">Service Tiers // Deployment Matrix</div>
+      <h2>Select the operational scope for your<em> next project.</em></h2>
+    </div>
+    <div class="grid-2 reveal-stagger">
+  <!-- Landing Page Card -->
+  <div class="card card-glow">
+    <div class="card-top mono">
+      <span>LANDING PAGE</span>
+    </div>
+    <div class="card-body" style="padding: 24px 0;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: #fff;">Landing Page</h3>
+      <div class="price" style="font-size: 2rem; font-weight: bold; margin-bottom: 16px; color: #00f0ff;">$150</div>
+      <p style="opacity: 0.8; margin-bottom: 24px; line-height: 1.6; color: #a0a0a0;">
+        Tech-Noir Aesthetic<br>Fully Responsive<br>Interactive UI / Forms
+      </p>
+    </div>
+    <div class="card-action">
+      <a href="#contact" class="btn-neon small"><span>Initialize</span></a>
+    </div>
+  </div>
 
-     
-        
-</section>
-<!-- Trust & Proof Section -->
-<section id="trust-proof" class="trust-section">
-    <div class="trust-container">
-        <h3 class="trust-heading">Proven Impact & Case Studies</h3>
-        <p class="trust-subheading">Real results engineered for digital brands and creators.</p>
-        
-        <div class="trust-grid">
-            <!-- Trust Card 1 -->
-            <div class="trust-card">
-                <h4>Brand Identity Overhaul</h4>
-                <p class="trust-metric">+150% Visual Engagement</p>
-                <p class="trust-desc">Transformed raw digital concepts into high-contrast visual systems that command immediate audience attention.</p>
-            </div>
-            
-            <!-- Trust Card 2 -->
-            <div class="trust-card">
-                <h4>UI/UX & Web Experience</h4>
-                <p class="trust-metric">Optimized Conversion Flow</p>
-                <p class="trust-desc">Built custom, responsive layouts designed to guide users seamlessly from landing to action.</p>
-            </div>
-            
-            <!-- Trust Card 3 -->
-            <div class="trust-card">
-                <h4>Client Testimonial</h4>
-                <p class="trust-quote">"The attention to detail and futuristic execution completely elevated our online presence. Outstanding work."</p>
-                <span class="trust-client">— Verified Digital Client</span>
-            </div>
+  <!-- Full Portfolio Card -->
+  <div class="card card-glow">
+    <div class="card-top mono">
+      <span>FULL PORTFOLIO</span>
+    </div>
+    <div class="card-body" style="padding: 24px 0;">
+      <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: #fff;">Full Portfolio</h3>
+      <div class="price" style="font-size: 2rem; font-weight: bold; margin-bottom: 16px; color: #00f0ff;">$350</div>
+      <p style="opacity: 0.8; margin-bottom: 24px; line-height: 1.6; color: #a0a0a0;">
+        Multi-Page Layout<br>GSAP & Motion Animations<br>Cloudflare Deployment
+      </p>
+    </div>
+    <div class="card-action">
+      <a href="#contact" class="btn-neon small"><span>Deploy Now</span></a>
+    </div>
+  </div>
+</div>
+   <div class="portfolio reveal">
+  <div class="section-head" style="margin-top:80px"><div class="mono label">Archive // Portfolio Showcase</div><h2>Deployed systems across <em>the frontier.</em></h2></div>
+  
+  <div class="portfolio-grid reveal-stagger">
+    <!-- CARD 1 - ADD YOUR IMAGE URL -->
+    <div class="portfolio-card">
+      <div class="p-img-wrap">
+        <img src="https://picsum.photos/seed/aether1/600/400" alt="Aether Prism" class="p-img" />
+        <div class="p-overlay">
+          <div class="p-overlay-inner">
+            <span class="mono">AETHER PRISM // 2025</span>
+            <h4>Aether Prism Project Mockup</h4>
+            <button class="btn-neon small" onclick="window.open(this.dataset.src,'_blank')" data-src="https://picsum.photos/seed/aether1/1200/800"><span>VIEW NOW</span></button>
+          </div>
         </div>
+      </div>
+      <span class="p-label">Aether Prism Project Mockup</span>
     </div>
+
+    <!-- CARD 2 -->
+    <div class="portfolio-card">
+      <div class="p-img-wrap">
+        <img src="https://picsum.photos/seed/apexnoir/600/400" alt="Apex Noir" class="p-img" />
+        <div class="p-overlay">
+          <div class="p-overlay-inner">
+            <span class="mono">APEX NOIR // 2025</span>
+            <h4>Apex Noir Showcase</h4>
+            <button class="btn-neon small" onclick="window.open(this.dataset.src,'_blank')" data-src="https://picsum.photos/seed/apexnoir/1200/800"><span>VIEW NOW</span></button>
+          </div>
+        </div>
+      </div>
+      <span class="p-label">Apex Noir Showcase</span>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="portfolio-card">
+      <div class="p-img-wrap">
+        <img src="https://picsum.photos/seed/shop/600/400" alt="Shop" class="p-img" />
+        <div class="p-overlay">
+          <div class="p-overlay-inner">
+            <span class="mono">COMMERCE // 2025</span>
+            <h4>Digital Shop Systems</h4>
+            <button class="btn-neon small" onclick="window.open(this.dataset.src,'_blank')" data-src="https://picsum.photos/seed/shop/1200/800"><span>VIEW NOW</span></button>
+          </div>
+        </div>
+      </div>
+      <span class="p-label">Digital Shop Systems</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
 </section>
-<section id="about">
-   <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-container">
-        <details class="faq-item">
-            <summary>What is your typical turnaround time for a project?</summary>
-            <p>Turnaround times vary depending on the scope of the project, but brand identity packages typically take between 1 to 2 weeks from initial concept to final delivery.</p>
-        </details>
-      <details class="faq-item">
-    <summary>What is your pricing structure?</summary>
-    <p>Projects are priced based on scope and requirements, offering flexible options whether you need a standalone logo, full brand identity, or ongoing design support.</p>
-</details>
 
-<details class="faq-item">
-    <summary>How many revision rounds are included?</summary>
-    <p>Every project includes dedicated revision rounds to ensure the final design aligns precisely with your vision and aesthetic goals.</p>
-</details>
+<!-- PRICING TIERS - SAME STYLE AS SERVICES -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">Pricing Tiers // Value Matrix</div>
+      <h2>Transparent pricing built for <em>every stage.</em></h2>
     </div>
-    <details class="faq-item">
-    <summary>What are your payment terms and how do I pay?</summary>
-    <p>For custom projects, we typically require a 50% upfront deposit to begin work and the remaining 50% upon final approval. International payments are securely handled through Payoneer.</p>
-</details>
 
-<details class="faq-item">
-    <summary>What do I need to provide before we start a project?</summary>
-    <p>Just your brand vision, any existing logos, color preferences, or reference examples you like. If you don't have these yet, we can build them from scratch during the Brand Identity phase.</p>
-</details>
+    <div class="grid-3 reveal-stagger">
+      <!-- 01 STARTER -->
+      <div class="card mini">
+        <div class="card-top mono"><span>01 // ENTRY NODE</span><span>STARTER</span></div>
+        <h4>Starter Tier</h4>
+        <div class="price-sm">$11 usd</div>
+        <p>Essential visual assets and social media kits designed to get new startups up and running fast.</p>
+        <ul style="margin-top:20px">
+          <li>Custom Post & Reel Graphics</li>
+          <li>Basic Brand Assets</li>
+          <li>1 Revision Round</li>
+        </ul>
+      <a href="#contact" class="btn-neon small" style="margin-top:16px"><span>Work with me →</span></a>
+      </div>
 
-<details class="faq-item">
-    <summary>How will we communicate during the design process?</summary>
-    <p>We keep communication transparent and structured through direct messaging and milestone updates so you are always in the loop from concept to final delivery.</p>
-</details>
-</section> 
-   
+      <!-- 02 PROFESSIONAL -->
+      <div class="card mini">
+        <div class="card-top mono"><span>02 // CORE PROTOCOL</span><span>POPULAR</span></div>
+        <h4>Professional Tier</h4>
+        <div class="price-sm">$18 usd</div>
+        <p>Complete brand identity and scalable web UI/UX systems to elevate your digital presence.</p>
+        <ul style="margin-top:20px">
+          <li>Full Visual Identity</li>
+          <li>Web & Mobile UI/UX</li>
+          <li>Priority Delivery & Support</li>
+        </ul>
+    <a href="#contact" class="btn-neon small" style="margin-top:16px"><span>Work with me →</span></a>
+      </div>
+
+      <!-- 03 ELITE -->
+      <div class="card mini highlight">
+        <div class="card-top mono"><span>03 // ELITE DEPLOYMENT</span><span>ELITE</span></div>
+        <h4>Elite Tier</h4>
+        <div class="price-sm">$27 usd</div>
+        <p>Full-scale custom development, end-to-end branding, and dedicated engineering support.</p>
+        <ul style="margin-top:20px">
+          <li>Everything in Professional</li>
+          <li>Custom 3D Web Graphics & GSAP</li>
+          <li>Dedicated Ongoing Support</li>
+        </ul>
+       <a href="#contact" class="btn-neon small" style="margin-top:16px"><span>Work with me →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OFFERED - BLUE POP BOXES -->
+<section id="services-offered" class="section svc-offered">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">Services Offered // Capability Matrix</div>
+      <h2>Capabilities engineered to <em>demand attention.</em></h2>
+    </div>
+
+    <div class="offered-grid reveal-stagger">
+      <!-- 01 -->
+      <div class="offered-card">
+        <div class="offered-icon mono">01</div>
+        <h4>Brand Reviews & Analysis</h4>
+        <p>Comprehensive written evaluations of brand identity, visual presence, and strategic positioning to help businesses elevate their market impact.</p>
+        <a href="#contact" class="btn-neon small"><span>Work with me →</span></a>
+        <div class="offered-glow"></div>
+      </div>
+
+      <!-- 02 -->
+      <div class="offered-card">
+        <div class="offered-icon mono">02</div>
+        <h4>Brand Identity & Visual Systems</h4>
+        <p>Crafting distinct visual signatures that demand attention and set you apart.</p>
+        <ul>
+          <li>Custom Monograms & Logo Systems</li>
+          <li>Brand Style Guides & Color Palettes</li>
+          <li>Typography Systems & Watermarks</li>
+        </ul>
+       <a href="#contact" class="btn-neon small"><span>Work with me →</span></a>
+        <div class="offered-glow"></div>
+      </div>
+
+      <!-- 03 -->
+      <div class="offered-card">
+        <div class="offered-icon mono">03</div>
+        <h4>UI/UX Design & Digital Experiences</h4>
+        <p>Building intuitive, high-impact digital experiences for modern web and mobile.</p>
+        <ul>
+          <li>Responsive Web & Mobile Interfaces</li>
+          <li>Interactive Wireframes & Prototypes</li>
+          <li>Design Systems & UI Components</li>
+        </ul>
+        <a href="#contact" class="btn-neon small"><span>Work with me →</span></a>
+        <div class="offered-glow"></div>
+      </div>
+
+      <!-- 04 -->
+      <div class="offered-card">
+        <div class="offered-icon mono">04</div>
+        <h4>Social Media Content & Graphics</h4>
+        <p>High-contrast, scroll-stopping visuals engineered for maximum engagement.</p>
+        <ul>
+          <li>Custom Post & Reel Graphic Templates</li>
+          <li>Automated & Tech Graphic Assets</li>
+          <li>Promo Flyers & Event Covers</li>
+          <li>Brand-Aligned Visual Content Strategy</li>
+        </ul>
+       <a href="#contact" class="btn-neon small"><span>Work with me →</span></a>
+        <div class="offered-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="section shop-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">Digital Shop // Asset Vault</div>
+      <h2>Plug-and-play assets from <em>the vault.</em></h2>
+    </div>
+
+    <div class="shop-grid reveal-stagger">
+      <!-- 1 -->
+      <div class="shop-card">
+        <div class="shop-top mono"><span>VAULT-001</span><span class="dot"></span><span>AVAILABLE</span></div>
+        <h4>Basic Logo Package</h4>
+        <p>Custom minimalist vector logo design tiers.</p>
+        <div class="shop-meta mono"><span>DELIVERY</span><b>48H</b></div>
+      <a href="#contact" class="btn-neon small"><span>Get Started →</span></a>
+      </div>
+
+      <!-- 2 -->
+      <div class="shop-card featured">
+        <div class="shop-badge mono">MOST POPULAR</div>
+        <div class="shop-top mono"><span>VAULT-002</span><span class="dot"></span><span>AVAILABLE</span></div>
+        <h4>Full Brand Identity</h4>
+        <p>Complete Cinematic Noir and Electric Teal visual branding.</p>
+        <div class="shop-meta mono"><span>DELIVERY</span><b>72H</b></div>
+       <a href="#contact" class="btn-neon small"><span>Get Started →</span></a>
+      </div>
+
+      <!-- 3 -->
+      <div class="shop-card">
+        <div class="shop-top mono"><span>VAULT-003</span><span class="dot"></span><span>AVAILABLE</span></div>
+        <h4>Automotive Graphic Design</h4>
+        <p>Custom vehicle posters and specialized automotive graphics.</p>
+        <div class="shop-meta mono"><span>DELIVERY</span><b>24H</b></div>
+        <a href="#contact" class="btn-neon small"><span>Get Started →</span></a>
+      </div>
+
+      <!-- 4 - IN DEV -->
+      <div class="shop-card dev">
+        <div class="shop-top mono"><span>VAULT-004</span><span class="dot dev"></span><span>IN DEV</span></div>
+        <h4>Harper A.I. Assistant</h4>
+        <p>Custom automated client intake and strategy assistant (Coming Soon).</p>
+        <div class="shop-meta mono"><span>STATUS</span><b class="blue">In Development</b></div>
+        <button class="btn-neon small disabled"><span>In Development</span></button>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<section id="impact" class="section impact-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">Proven Impact // Case Studies</div>
+      <h2>Real results engineered for <em>digital brands.</em></h2>
+      <p class="head-sub">Real results engineered for digital brands and creators.</p>
+    </div>
+
+    <div class="impact-grid reveal-stagger">
+      <!-- CASE 1 -->
+      <div class="impact-card">
+        <div class="impact-top">
+          <div class="impact-icon mono">01</div>
+          <div class="impact-tag mono">BRAND IDENTITY</div>
+        </div>
+        <h4>Brand Identity Overhaul</h4>
+        <div class="impact-stat"><b class="counter" data-target="150" data-prefix="+" data-suffix="%">0</b><span>Visual Engagement</span></div>
+        <p>Transformed raw digital concepts into high-contrast visual systems that command immediate audience attention.</p>
+        <div class="impact-bar"><div class="impact-fill" data-width="92"></div></div>
+      </div>
+
+      <!-- CASE 2 -->
+      <div class="impact-card">
+        <div class="impact-top">
+          <div class="impact-icon mono">02</div>
+          <div class="impact-tag mono">UI/UX DESIGN</div>
+        </div>
+        <h4>UI/UX & Web Experience</h4>
+        <div class="impact-stat"><b>Optimized</b><span>Conversion Flow</span></div>
+        <p>Built custom, responsive layouts designed to guide users seamlessly from landing to action and convert fully.</p>
+        <div class="impact-bar"><div class="impact-fill" data-width="88"></div></div>
+      </div>
+
+      <!-- TESTIMONIAL - BLUE GLOW -->
+      <div class="impact-card testimonial">
+        <div class="impact-top">
+          <div class="impact-icon mono">★★★★★</div>
+          <div class="impact-tag mono">CLIENT TESTIMONIAL</div>
+        </div>
+        <div class="quote-mark">“</div>
+        <h4 class="testimonial-text">The attention to detail and futuristic execution completely elevated our online presence. Outstanding work.</h4>
+        <div class="testimonial-author mono">— Verified Digital Client</div>
+        <div class="testimonial-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT - SAME HEAD STYLE -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="mono label">About // Signal Origin</div>
+      <h2>Crafting distinct <em>visual signatures</em></h2>
+    </div>
+
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm Aether Prism - a visual designer focused on Cinematic Noir × Electric Teal. Building brand systems that demand attention in a noisy feed.</p>
+        <p>From startups to elite deployments, I translate your vision into scalable visual protocols - logos, UI, 3D web, social kits, everything you need to stand out.</p>
+        
+        <div class="stats">
+          <div><b>50+</b><span>PROJECTS SHIPPED</span></div>
+          <div><b>99%</b><span>CLIENT RETENTION</span></div>
+          <div><b>24H</b><span>RESPONSE TIME</span></div>
+        </div>
+
+        <div class="quote">
+          "Design is not just what it looks like - it's how it transmits signal through noise. Every pixel is a protocol."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-head reveal"><div class="mono label">FAQ // Protocol</div><h2>Clear answers</h2></div>
+    <div class="faq-grid">
+      <div class="faq-item active"><button class="faq-q"><span>What is your typical turnaround time?</span><i>+</i></button><div class="faq-a"><p>1 to 2 weeks from initial concept to final delivery.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span>What is your pricing structure?</span><i>+</i></button><div class="faq-a"><p>Projects are priced based on scope - flexible options for logo, full identity, or ongoing support.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span>How many revision rounds are included?</span><i>+</i></button><div class="faq-a"><p>Every project includes dedicated revision rounds to align precisely with your vision.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span>What are your payment terms?</span><i>+</i></button><div class="faq-a"><p>50% upfront to begin, 50% on final approval. International via Payoneer.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span>What do I need to provide?</span><i>+</i></button><div class="faq-a"><p>Just your brand vision, logos, colors, or refs. We can build from scratch too.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span>How will we communicate?</span><i>+</i></button><div class="faq-a"><p>Transparent structured comms via direct messaging and milestone updates.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT - SAME HEAD STYLE -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head reveal"><div class="mono label">Contact Me // Initialize Transmission</div><h2>Ready to dominate <em>the frontier?</em></h2></div>
+    <div class="contact-wrap reveal-stagger">
+      <div class="contact-info card">
+        <p>Drop your vision below. Automated intake, human craft.</p>
+        <div class="contact-meta mono"><div>EMAIL // hg@aether.prism</div><div>LOCATION // Global Remote - PK / US / UK</div><div>RESPONSE // &lt; 6 Hours</div></div>
+      </div>
+     <iframe src="https://tally.so/embed/1A5NQg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="350" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form"></iframe>
+<script async src="https://tally.so/widgets/embed.js"></script>
+       
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="f-left">
+        <div class="f-logo mono">AETHER PRISM</div>
+        <p>Crafting distinct visual signatures that demand attention. Cinematic Noir × Electric Teal.</p>
+      
+      </div>
+      <div class="f-right">
+        <div class="f-col"><div class="mono f-title">EXPLORE</div><a href="#work">Portfolio</a><a href="#services">Services</a><a href="#shop">Shop</a><a href="#impact">Case Studies</a></div>
+        <div class="f-col"><div class="mono f-title">INFO</div><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#">Payoneer</a></div>
+        <div class="f-col"><div class="mono f-title">CONNECT</div><a href="#">Instagram</a><a href="#">Behance</a><a class="f-email" href="mailto:hello@aether.com">hello@aether.com</a><span class="mono f-small">24H Response<br>Karachi PK • GMT+5</span></div>
+      </div>
+    </div>
+    <div class="f-bottom mono"><div>© 2026 AETHER PRISM • All Rights Reserved</div><div class="f-line"></div><div>System: <b style="color:var(--blue)">ONLINE</b> • Signal Strength: <b>100%</b></div></div>
+  </div>
+</footer>
 <script src="script.js"></script>
-<section id="contact">
-        <h2>Contact Me</h2>
- 
-  <iframe data-tally-src="https://tally.so/embed/1A5NQg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="439" frameborder="0" marginheight="0" marginwidth="0" title="HG Designs inquiry"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>      
-    </section>
-
-    </body>
+</body>
 </html>
